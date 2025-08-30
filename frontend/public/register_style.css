@@ -1,0 +1,145 @@
+@font-face {
+	font-family: 'Rosarivo';
+	src: url("./frontend/fonts/Rosarivo-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+}
+body {
+	margin: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.register-form {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	padding: 200px;
+	background-color: white;
+	border-radius: 30px;
+	max-width: 400px;
+	box-shadow: 5px 5px 20px;
+	transform: scale(1.1);
+}
+.register-form div {
+	margin-bottom: 15px;
+}
+.label-text {
+	font-family: 'Rosarivo', sans-serif;
+	font-weight: 600;
+	display: block;
+}
+.register-form input {
+	padding: 12px 15px;
+	border: 2px solid #e1e1e1;
+	border-radius: 8px;
+	font-family: 'Rosarivo', sans-serif;
+	font-size: 16px;
+	width: 100%;
+	box-sizing: border-box;
+	transition: all 0.3s ease-out;
+}
+.register-form input:focus {
+	outline: none;
+	border-color: #007bff;
+	box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+.register-form input:hover {
+	box-shadow: 1px 1px 5px inset;
+}
+.register-form input::placeholder {
+	color: #999;
+	font-family: 'Rosarivo', sans-serif;
+}
+.register-form input[type="date"] {
+	font-family: inherit;
+	color: grey;
+}
+.btn {
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+a.submit-btn {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	border-radius: 5px;
+	border: none;
+	background-color: #007bff;
+	color: white;
+	font-family: 'Rosarivo', sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+}
+a.submit-btn:hover {
+	filter: brightness(1.2) drop-shadow(0 0 10px #007bff);
+	transform: translateY(-2px);
+}
+@media (max-width: 480px) {
+	.register-form {
+		padding: 30px 25px;
+		margin: 10px;
+		max-width: 100%;
+	}
+	.register-form input {
+		padding: 10px;
+		font-size: 15px;
+	}
+	.label-text {
+		font-size: 15px;
+	}
+}
+@media (max-width: 360px) {
+	.register-form {
+		padding: 20px 15px;
+		margin: 5px;
+		border-radius: 20px;
+	}
+	.register-form input {
+		padding: 8px 10px;
+		font-size: 14px;
+	}
+	.label-text {
+		font-size: 14px;
+	}
+	body {
+		padding: 10px;
+	}
+}
+
+@media (max-width: 768px){
+	.register-form {
+		padding: 40px 30px;
+		margin: 20px;
+
+	}
+	.register-form input {
+		padding: 10px 12px;
+	}
+}
+@media (max-width: 1300px) {
+	.register-form {
+		padding: 40px 30px;
+		margin: 10px;
+	}
+	.register-form input {
+		padding: 10px 12px;
+	}
+}
+@media (max-width:1700px) {
+	.register-form {
+		padding: 50px 40px;
+		margin: 10px;
+		transform: scale(1);
+	}
+	.register-form input {
+		padding: 10px 30px;
+	}
+}
