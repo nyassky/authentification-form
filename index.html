@@ -10,17 +10,23 @@
 <body>
 	<div class="form-auth">
 		<form action="">
-		<div>
-			<label class="label-text" for="username">Username</label>
-			<input class="input-text" type="text">
+		<div class="user-input">
+			<div>
+				<label class="label-text" for="username">Username</label>
+			</div>
+			<input id="username_input" class="input-text" placeholder="Enter username" type="text">
 		</div>
-		<div>
-			<label class="label-text" for="password">Password</label>
-			<input class="input-text" type="password">
+		<div class="passw-input">
+			<div>
+				<label class="label-text" for="password">Password</label>
+			</div>
+			<input id="password_input" class="input-text" placeholder="Enter password" type="password">
 		</div>
-		<div>
-			<button class="btnSign-in">Sign in</button>
-			<button class="btnSign-on">Sign on</button>
+		<div class="btn">
+			<button class="btn-sign-in">Sign in</button>
+		</div>
+		<div class="btn">
+			<button class="btn-sign-on">Sign on</button>
 		</div>
 		
 	</form>
