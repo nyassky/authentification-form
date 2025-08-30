@@ -1,0 +1,14 @@
+body {
+	margin: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.form-auth {
+	margin: auto;
+	padding: 100px 50px;
+	background-color: rgb(150, 200, 201);
+	border-radius: 45px;
+	box-shadow: 10px 10px 70px;
+}
