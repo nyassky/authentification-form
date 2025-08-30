@@ -1,0 +1,64 @@
+@font-face {
+	font-family: 'Rosarivo';
+	src: url("./frontend/fonts/Rosarivo-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.success {
+	padding: 150px;
+	border-radius: 30px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #35ed32;
+	box-shadow: 2px 2px 20px #35ed32 inset;
+}
+#success-text {
+	font-family: 'Rosarivo', sans-serif;
+	font-size: 28px;
+
+}
+.btn-leave {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: #35ed32;
+	text-align: center;
+	color: white;
+	font-family: 'Rosarivo', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+}
+.btn-leave:hover {
+	box-shadow: 2px 2px 10px #35ed32 inset;
+	border-radius: 5px;
+	background-color: white;
+	color: black;
+	transform: translateY(-2px);
+}
+@media (max-width: 593) {
+	.success {
+		padding: 30px 25px;
+		margin: 10px;
+		max-width: 100%;
+	}
+	#success-text {
+		font-size: 15px;
+	}
+}
+@media (max-width: 795px) {
+	.success {
+		padding: 40px 30px;
+		margin: 20px;
+	}
+}
